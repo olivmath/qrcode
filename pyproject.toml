@@ -1,0 +1,13 @@
+[project]
+name = "myqr"
+version = "0.1.0"
+description = ""
+authors = [{ name = "Lucas Oliveira", email = "olivmath@protonmail.com" }]
+readme = "README.md"
+requires-python = ">=3.9,<4.0"
+dependencies = ["qrcode[pil] (>=8.0,<9.0)", "pyzbar (>=0.1.9,<0.2.0)", "pillow (>=11.1.0,<12.0.0)"]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

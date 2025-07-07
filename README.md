@@ -1,5 +1,8 @@
 # QR Code Generator and Reader
 
+> [!TIP]
+> NOW WRITE IN RUST 🦀
+
 A simple GUI application for generating and reading QR codes using Python and Tkinter.
 
 ## Home

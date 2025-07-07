@@ -1,0 +1,12 @@
+[package]
+name = "myqr"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bardecoder = "0.5.0"
+anyhow = "1.0"
+image = "0.24"
+clap = { version = "4.0", features = ["derive"] }
+qrcode = "0.12"
+dirs = "4.0"

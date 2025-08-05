@@ -1,11 +1,47 @@
 [project]
-name = "myqr"
+name = "myqr-gui"
 version = "0.1.0"
-description = ""
+description = "A simple GUI application for generating and reading QR codes using Python and Tkinter"
 authors = [{ name = "Lucas Oliveira", email = "olivmath@protonmail.com" }]
 readme = "README.md"
 requires-python = ">=3.9,<4.0"
-dependencies = ["qrcode[pil] (>=8.0,<9.0)", "pyzbar (>=0.1.9,<0.2.0)", "pillow (>=11.1.0,<12.0.0)"]
+dependencies = [
+    "qrcode[pil]>=8.0,<9.0",
+    "pyzbar>=0.1.9,<0.2.0",
+    "pillow>=11.1.0,<12.0.0"
+]
+keywords = ["qrcode", "gui", "tkinter", "generator", "reader"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Multimedia :: Graphics",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Environment :: X11 Applications :: Qt"
+]
+license = {text = "MIT"}
+
+[project.urls]
+Homepage = "https://github.com/olivmath/myqr-gui"
+Repository = "https://github.com/olivmath/myqr-gui"
+Issues = "https://github.com/olivmath/myqr-gui/issues"
+
+[project.scripts]
+myqr = "myqr.main:main"
+
+[tool.poetry]
+name = "myqr-gui"
+version = "0.1.0"
+description = "A simple GUI application for generating and reading QR codes using Python and Tkinter"
+authors = ["Lucas Oliveira <olivmath@protonmail.com>"]
+readme = "README.md"
+packages = [{include = "myqr"}]
 
 
 [build-system]

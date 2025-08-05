@@ -1,0 +1,8 @@
+include README.md
+include LICENSE
+include pyproject.toml
+include PUBLISH.md
+include check_dependencies.py
+recursive-include myqr *.py
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]

@@ -1,6 +1,10 @@
-# QR Code Generator and Reader
+# MyQR GUI
 
-A simple GUI application for generating and reading QR codes using Python and Tkinter.
+A simple and intuitive GUI application for generating and reading QR codes using Python and Tkinter.
+
+[![PyPI version](https://badge.fury.io/py/myqr-gui.svg)](https://badge.fury.io/py/myqr-gui)
+[![Python versions](https://img.shields.io/pypi/pyversions/myqr-gui.svg)](https://pypi.org/project/myqr-gui/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Home
 
@@ -22,25 +26,59 @@ A simple GUI application for generating and reading QR codes using Python and Tk
 
 ## Requirements
 
-- Python 3.x
-- Tkinter (built-in with Python)
+- Python 3.9+
+- Tkinter (usually built-in with Python, but may need separate installation on some systems)
 - qrcode library (for generating QR codes)
 - pyzbar library (for reading QR codes)
 - PIL library (for image processing)
 
+### Tkinter Installation
+
+Tkinter is usually included with Python, but if you encounter import errors:
+
+**Ubuntu/Debian:**
+```bash
+sudo apt-get install python3-tk
+```
+
+**macOS (with Homebrew):**
+```bash
+brew install python-tk
+```
+
+**Windows:**
+Tkinter should be included with the standard Python installation from python.org
+
 ## Installation
 
-1. Install Python 3.x if not already installed.
-2. Install the required libraries using pip:
+### From PyPI (Recommended)
 
-```
-poetry add "qrcode[pil]" pyzbar Pillow
+```bash
+pip install myqr-gui
 ```
 
-3. Run the application using Python:
+After installation, you can run the application from anywhere:
 
+```bash
+myqr
 ```
-python myqr/main.py
+
+### From Source
+
+1. Clone the repository:
+```bash
+git clone https://github.com/olivmath/myqr-gui.git
+cd myqr-gui
+```
+
+2. Install dependencies:
+```bash
+pip install -e .
+```
+
+3. Run the application:
+```bash
+python -m myqr.main
 ```
 
 ## Usage
